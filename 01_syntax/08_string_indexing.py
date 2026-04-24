@@ -1,3 +1,5 @@
+# indexing = accessing elements of a sequence using[] (indexing operator)
+#            [start : end : step]
 
 
 # If you dont want characters to be prefaced by \ to be intepreted 
@@ -19,6 +21,14 @@ print(word[-5])
 # Slicing is also supported, allows you to obtain a substring
 print(word[0:2])
 print(word[:4] + word[4:])
+
+# print every second character
+credit_number = "1234-5678-91011"
+print(credit_number[::2])
+
+# print the last 4 chars
+last_digit = credit_number[-4:]
+print(f"XXXX-XXXX-XXXX-{last_digit}")
 
 """
 +---+---+---+---+---+---+
