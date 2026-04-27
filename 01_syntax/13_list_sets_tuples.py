@@ -119,3 +119,11 @@ for name in names:
 
 print(names.index('Kyla'))
 
+# you can also use the enumerate() function on a collection that holds
+# tuples. In each tuple object, must be pair/two values for tuple unpacking
+
+array = ['cory', 'kyla', 'jeremy', 'michael', 'ethan']
+
+for index, name in enumerate(array, 1):
+  print(f'{index:2} {name}')
+
