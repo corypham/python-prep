@@ -28,6 +28,15 @@ while True:
     print(f'{key:10}: ${value:.2f}')
   print('-------------------------')
 
+  print('------- YOUR CART -------')
+  if not cart:
+    print("EMPTY")
+
+  for item in cart:
+    print(f'{item}', end=' ')
+  print()
+  print('-------------------------')
+
 
 for item in cart:
   total += menu[item]

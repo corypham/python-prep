@@ -49,8 +49,21 @@ def count_down():
 
     return None
 
+#################################################################
+# Test nested loops
+
+def test_nested_loops():
+    output = []
+    for i in range(2):
+        for j in range(2):
+            if j == 0:
+                continue
+            output.append(f'i={i}, j={j}')
+    return output
+
 def main():
     count_down()
+    print(test_nested_loops())
     return 0
 
 if __name__ == "__main__":

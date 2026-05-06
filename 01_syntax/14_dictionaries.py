@@ -43,7 +43,11 @@ for value in values:
 # items return a dictionary object with a 2d list of tuples
 items = capitals.items()
 
+print(items)
+
 # iterable unpacking / tuple unpacking
+# using dict.items() method returns a view of key-value pairs,
+# which are commonly unpacked as 'for key, value'
 for key, value in capitals.items():
   print(f'key: {key}, Value: {value}')
 # clear
