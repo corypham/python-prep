@@ -22,14 +22,14 @@ def main():
   decrypt_text = ""
   key = []
 
-  print(chars)
+  # print(chars)
 
   cipher_text, key = randomize(chars, plain_text, cipher_text, key)
   print(f'original message: {plain_text}')
   print(f'encrypted message: {cipher_text}')
   print(f'key: ', end='')
-  for char in key:
-    print(f'{char}', sep=' ', end='')
+  for num in key:
+    print(f'{num}', sep=' ', end=' ')
   print()
   print(f'decrypted text: {decrypt(chars, key, decrypt_text)}')
 
